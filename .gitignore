@@ -29,3 +29,5 @@
 .metadata/.plugins/org.eclipse.wst.jsdt.core/variablesAndContainers.dat
 
 .metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties
+.recommenders/caches/manual-mappings.json
+.recommenders/caches/identified-project-coordinates.json
