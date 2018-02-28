@@ -1,0 +1,1 @@
+Example of reference to methods. There is a static method and another that needs the stay of the utility class.
