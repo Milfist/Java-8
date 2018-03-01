@@ -22,7 +22,14 @@ public class ReduccionesUtil {
 	 */
 	public Collection<String> obtenSinNulosYMayusculas(List<String> original) {
 		
-		return null;
+		Collection<String> result = new ArrayList<String>();
+		
+		original.stream()
+				.filter(obj -> obj != null)
+				.map(obj -> obj.toUpperCase())
+				.forEach(obj -> result.add(obj));
+		
+		return result;
 	}
 
 	/**
