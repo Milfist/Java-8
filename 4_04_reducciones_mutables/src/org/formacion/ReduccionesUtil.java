@@ -3,6 +3,7 @@ package org.formacion;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Para las soluciones de estos ejercicios utiliza streams, las 
@@ -47,9 +48,18 @@ public class ReduccionesUtil {
 		 */
 		int[] acumular = {0,0};
 		
+//		 Modo bueno de agrupar, ejercicios futuros
+//		 numeros.stream().collect(Collectors.groupingBy(ReduccionesUtil::isOdd));
+		
+		// Cualquier entero dividido entre 2 da como resto 0 o 1.
+		numeros.stream().forEach(it -> acumular[it % 2] += 1);
 		
 		return acumular;
 		
+	}
+	
+	public static boolean isOdd(Integer num) {
+		return num%2 != 0;
 	}
 	
 }
